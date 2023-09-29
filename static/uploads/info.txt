@@ -1,0 +1,1 @@
+Here, the uploaded image will be stored in your local machine
