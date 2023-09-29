@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Denoiser</title> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <form action="/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+            <h1>Denoise Your Image</h1>
+            <div class="input-box">
+                <input type="file" name="file" accept="image/*" class="file-input">
+                
+            </div>
+            <div class="input-box">
+                <input type="number" name="denoising_level" placeholder="Denoising Level(0-100)" class="denoising-level">
+                <i class='bx bx-filter' ></i>
+            </div>
+            <button type="submit" class="btn">
+                Upload and Denoise
+            </button>
+        </form>
+    </div>
+</body>
+</html>
